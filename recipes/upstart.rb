@@ -26,8 +26,6 @@ template "/etc/init/dynamodb-local.conf" do
 
   variables({
     :name => config["name"],
-    :user => config["user"],
-    :group => config["user"],
     :log_dir => config["log_dir"],
     :port => config["port"],
     :path => config["directory"]

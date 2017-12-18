@@ -3,9 +3,6 @@ description "<%= @name %>"
 start on runlevel [234]
 stop on runlevel [!234]
 
-setuid <%= @user %>
-setgid <%= @group %>
-
 respawn
 respawn limit 3 30
 
